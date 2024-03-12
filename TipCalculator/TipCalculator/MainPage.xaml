@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TipCalculator.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="0,0"
+            Spacing="0">
+
+            <Label
+                 Text="Bill"
+                 Margin="10"
+                />
+
+            <Entry
+                x:Name="ValueEntry"
+                Placeholder="Enter Amount"
+                />
+            
+            <Label
+                x:Name="LabelTipValue"
+                Text="Tip"
+                />
+            <Label
+                x:Name="LabelTotalValue"
+                Text="0.00"
+                />
+            <Label
+                x:Name="LabelPercentageValue"
+                Text="Total"
+                />
+            <Label
+                x:Name="result1"
+                Text="0.00"
+                />
+            <Label
+                x:Name="TipPercentage"
+                Text="Tip Percentage"
+                />
+            <Label
+                x:Name="NumBtn"
+                Text="0%"
+                />
+            
+            <Slider
+                x:Name="SliderTipPercent"
+                Minimum="0"
+                Maximum="100"
+                Value="0"
+                />
+
+            <Button
+                x:Name="Btn15"
+                Text="15%"
+                HorizontalOptions="Fill"
+                Clicked="OnBtn15Clicked"/>
+
+
+            <Button 
+                x:Name="Btn20"
+                Text="20%"
+                HorizontalOptions="Fill"
+                Clicked="OnBtn20Clicked"/>
+           
+            <Button 
+                x:Name="RoundDownBtn"
+                Text="Round Down"
+                HorizontalOptions="Fill"
+                Clicked="OnRoundDownBtnClicked"
+                />
+            
+            <Button 
+                x:Name="RoundUpSBtn"
+                Text="Round Up"
+                HorizontalOptions="Fill"
+                Clicked="OnRoundUpBtnClicked"
+                />
+ 
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
